@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+    <title>Projects - Mateusz Osojca</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .project-item img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Projects</h1>
+        <h1>My Portfolio</h1>
+        <p>Web Development & Cyber Security</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="videoDemo.html">Video</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="projects-grid">
             <div class="project-item"><img src="placeholder1.jpg" alt="Project 1"></div>

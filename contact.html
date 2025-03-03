@@ -7,46 +7,66 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
         }
         .container {
             max-width: 600px;
-            margin: auto;
-            background: rgb(51, 168, 184);
+            margin: 50px auto;
+            background: #111;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
         h2 {
-            text-align: center;
+            font-size: 24px;
         }
         label {
+            display: block;
+            margin-top: 10px;
             font-weight: bold;
         }
         input, textarea {
             width: 100%;
             padding: 8px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
+            margin-top: 5px;
+            border: 1px solid #444;
+            background: #222;
+            color: #fff;
             border-radius: 4px;
         }
         button {
-            background-color: #bbb93d;
-            color: rgb(255, 255, 255);
+            background-color: #444;
+            color: #fff;
             padding: 10px;
             border: none;
             cursor: pointer;
             width: 100%;
             border-radius: 4px;
+            margin-top: 15px;
         }
         button:hover {
-            background-color: #868821;
+            background-color: #666;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
         }
     </style>
-</head>
-<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="project.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video</a>
+        <a href="sitereport.html">Site Report</a>
+    </nav>
     <div class="container">
         <h2>Contact Us</h2>
         <p>Email: mati.osojca@gmail.com</p>
@@ -67,5 +87,8 @@
             <button type="submit">Send Email</button>
         </form>
     </div>
+    <footer>
+        <p>&copy; Mateusz Osojca 2025</p>
+    </footer>
 </body>
 </html>
