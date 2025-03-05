@@ -20,22 +20,37 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            width: 100%;
         }
         h1 {
             color: #f0f0f0;
         }
+        nav.main-nav {
+            background: #444;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1001;
+        }
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            text-align: center;
         }
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin: 0 15px;
         }
         nav ul li a {
             color: #ddd;
             text-decoration: none;
             font-weight: bold;
+        }
+        .content {
+            margin-top: 80px; /* Adjust for fixed nav */
+            padding: 20px;
         }
         footer {
             background: #222;
@@ -48,8 +63,19 @@
     </style>
 </head>
 <body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="videoDemo.html">Video</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+    </nav>
     <header>
-        <h1>My Web Development Journey</h1>
+        <h1>Site Report</h1>
+    </header>
+    <div class="content">
         <nav>
             <ul>
                 <li><a href="#experience">Experience</a></li>
@@ -58,16 +84,7 @@
                 <li><a href="#video">Video Demo</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="videoDemo.html">Video</a></li>
-                <li><a href="sitereport.html">Site Report</a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
     <footer>
         <p>&copy; Mateusz Osojca 2025</p>
     </footer>
