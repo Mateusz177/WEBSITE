@@ -51,31 +51,30 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
             justify-items: center;
         }
 
-        .project-item, .header-item {
+        .header-item {
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             transition: transform 0.3s ease-in-out;
+            text-align: left;
         }
 
-        .project-item:hover, .header-item:hover {
+        .header-item:hover {
             transform: scale(1.05);
         }
 
-        nav {
-            margin-top: 20px;
-        }
         nav ul {
             list-style: none;
             padding: 0;
@@ -83,12 +82,14 @@
             justify-content: center;
             gap: 20px;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 18px;
             transition: transform 0.3s ease-in-out;
         }
+
         nav ul li a:hover {
             text-decoration: underline;
             transform: scale(1.1);
@@ -117,10 +118,22 @@
         </ul>
     </nav>
     <main class="grid-container">
-        <div class="header-item">Experience</div>
-        <div class="header-item">Design Choices</div>
-        <div class="header-item">Validation</div>
-        <div class="header-item">Video Demo</div>
+        <div class="header-item">
+            <h2>Experience</h2>
+            <p>It was satisfying and difficult to learn HTML, CSS, and JavaScript. At first, using semantic HTML to structure my website seemed simple, but managing the layout and styling needed more knowledge. JavaScript was essential for interactive features like the rain motion, while CSS capabilities like Flexbox and Grid made responsive designs possible. A significant portion of the project involved debugging, particularly when dealing with responsive elements and animations. For resolving layout problems, tools like Chrome Developer Tools were quite helpful.</p>
+        </div>
+        <div class="header-item">
+            <h2>Design Choices</h2>
+            <p>I chose a black background with neon-style accents because my design approach was motivated by cyberpunk aesthetics. A sense of speed and excitement is added by the background rain effect. For readability, I went with a crisp, contemporary sans-serif typeface, and user engagement is improved by hover effects and animations. In order to portray important portions in an orderly and aesthetically pleasing way, the grid pattern was used.</p>
+        </div>
+        <div class="header-item">
+            <h2>Validation</h2>
+            <p>My HTML and CSS were validated using W3C tools. Below are screenshots of the validation reports confirming best coding practices.</p>
+        </div>
+        <div class="header-item">
+            <h2>Video Demo</h2>
+            <p>A walkthrough video of my project is available here: <a href="#">[Insert Video Link]</a>.</p>
+        </div>
     </main>
     <footer>
         <p>&copy; Mateusz Osojca 2025</p>
